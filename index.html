@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CanClaim | Reclamaciones aéreas Canadá</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-900 font-sans">
+  <header class="flex justify-between items-center p-4 max-w-6xl mx-auto">
+    <img src="public/logo.png" alt="CanClaim Logo" class="h-12 w-auto">
+   <nav class="space-x-4">
+  <a href="#beneficios" class="text-sm text-gray-700 hover:text-blue-600">¿Por qué CanClaim?</a>
+  <a href="#compensaciones" class="text-sm text-gray-700 hover:text-blue-600">Compensaciones</a>
+  <a href="#contacto" class="text-sm text-gray-700 hover:text-blue-600">Contáctanos</a>
+  </nav>
+    <div>
+      <select class="text-sm border rounded px-2 py-1">
+        <option>🇪🇸 ES</option>
+        <option>🇺🇸 EN</option>
+        <option>🇨🇦 FR</option>
+      </select>
+    </div>
+  </header>
+  <section class="bg-[#f3f4f6] text-center py-16 px-4">
+    <h1 class="text-3xl md:text-4xl font-bold mb-4">¿Te cancelaron o se retrasó tu vuelo?</h1>
+    <p class="text-xl mb-2">Obtén hasta <strong>$1,000 CAD</strong> en compensaciones por pasajero</p>
+    <p class="mb-6 text-gray-700">No importa cuánto pagaste por tu ticket</p>
+    <a href="#" class="bg-[#1b2d5d] text-white font-semibold px-6 py-3 rounded hover:bg-blue-800">Comienza tu reclamación aquí</a>
+    <p class="text-sm text-gray-600 mt-2">Revisa tu compensación en tan solo 2 minutos. El resto lo hacemos nosotros.</p>
+  </section>
+  <section class="bg-white py-12 px-4" id="contacto">
+  <div class="max-w-2xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-6">Contáctanos</h2>
+    <p class="mb-8 text-gray-600">¿Tienes preguntas o necesitas ayuda con tu reclamación? Escríbenos.</p>
+    <form action="https://formspree.io/f/xdkglkjo" method="POST" class="space-y-6 text-left">
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Nombre completo</label>
+        <input type="text" name="nombre" required class="mt-1 block w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Correo electrónico</label>
+        <input type="email" name="email" required class="mt-1 block w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200">
+      </div>
+      <div>
+        <label class="block text-sm font-medium text-gray-700">Mensaje</label>
+        <textarea name="mensaje" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md px-4 py-2 focus:ring focus:ring-blue-200"></textarea>
+      </div>
+      <div>
+        <button type="submit" class="bg-[#1b2d5d] text-white px-6 py-3 rounded hover:bg-blue-800">Enviar mensaje</button>
+      </div>
+    </form>
+  </div>
+</section>
+<section class="bg-white py-12 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">¿Por qué elegir CanClaim?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">100% Legal</h3>
+        <p class="text-gray-600">Basados en la normativa canadiense APPR, aseguramos el cumplimiento legal.</p>
+      </div>
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">Sin pagos por adelantado</h3>
+        <p class="text-gray-600">Solo cobramos si tú ganas. Nuestra comisión es del 28% del monto recuperado.</p>
+      </div>
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">Rápido y sin complicaciones</h3>
+        <p class="text-gray-600">Evalúa tu caso en 2 minutos. Nosotros nos encargamos del resto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bg-gray-50 py-12 px-4" id="compensaciones">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-6">Tabla de Compensaciones</h2>
+    <p class="mb-6 text-gray-700">Según la normativa APPR de Canadá, tienes derecho a una compensación dependiendo del tipo de aerolínea y la demora.</p>
+
+    <div class="overflow-x-auto">
+      <table class="min-w-full border border-gray-300 text-left text-sm">
+        <thead class="bg-gray-200 text-gray-700 uppercase">
+          <tr>
+            <th class="py-3 px-4 border">Tipo de aerolínea</th>
+            <th class="py-3 px-4 border">Cancelación</th>
+            <th class="py-3 px-4 border">Reubicación / Retraso <br> (0–6 h)</th>
+            <th class="py-3 px-4 border">Retraso (6–9 h)</th>
+            <th class="py-3 px-4 border">Retraso (más de 9 h)</th>
+          </tr>
+        </thead>
+        <tbody class="bg-white text-gray-800">
+          <tr>
+            <td class="py-3 px-4 border font-semibold">Aerolínea Grande</td>
+            <td class="py-3 px-4 border">$400 CAD</td>
+            <td class="py-3 px-4 border">$800 CAD</td>
+            <td class="py-3 px-4 border">$1,800 CAD</td>
+            <td class="py-3 px-4 border">$2,400 CAD</td>
+          </tr>
+          <tr class="bg-gray-100">
+            <td class="py-3 px-4 border font-semibold">Aerolínea Pequeña</td>
+            <td class="py-3 px-4 border">$125 CAD</td>
+            <td class="py-3 px-4 border">$400 CAD</td>
+            <td class="py-3 px-4 border">$1,800 CAD</td>
+            <td class="py-3 px-4 border">$2,400 CAD</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="mt-6 text-sm text-gray-600 italic">* Estos valores aplican solo si la interrupción fue responsabilidad de la aerolínea y no por razones de seguridad.</p>
+  </div>
+</section>
+<section class="bg-white py-12 px-4" id="beneficios"></section>
+
+</body>
+<footer class="bg-[#1b2d5d] text-white py-8 px-4 mt-16">
+  <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-8 items-center">
+    
+    <!-- Columna 1: Logo / Nombre -->
+    <div class="text-center md:text-left">
+      <img src="public/logo.png" alt="CanClaim Logo" class="h-10 mb-2 mx-auto md:mx-0">
+      <p class="text-sm text-gray-300">Defendiendo tus derechos como pasajero aéreo en Canadá.</p>
+    </div>
+
+    <!-- Columna 2: Navegación -->
+    <div class="text-center">
+      <h3 class="font-semibold mb-2">Navegación</h3>
+      <ul class="space-y-1 text-sm">
+        <li><a href="#beneficios" class="hover:underline">¿Por qué CanClaim?</a></li>
+        <li><a href="#compensaciones" class="hover:underline">Compensaciones</a></li>
+        <li><a href="#contacto" class="hover:underline">Contáctanos</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Legal -->
+    <div class="text-center md:text-right text-sm text-gray-300">
+      <p>&copy; 2025 CanClaim. Todos los derechos reservados.</p>
+      <a href="#" class="hover:underline">Política de privacidad</a>
+    </div>
+  </div>
+</footer>
+</html>
