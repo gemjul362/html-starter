@@ -8,32 +8,191 @@
 </head>
 
 <body class="bg-white text-gray-900 font-sans">
-  <header class="flex justify-between items-center p-4 max-w-6xl mx-auto">
-    <img src="public/logo.png" alt="CanClaim Logo" class="h-12 w-auto">
-   <nav class="space-x-4">
-  <a href="#beneficios" class="text-sm text-gray-700 hover:text-blue-600">¿Por qué CanClaim?</a>
-  <a href="#compensaciones" class="text-sm text-gray-700 hover:text-blue-600">Compensaciones</a>
-  <a href="#contacto" class="text-sm text-gray-700 hover:text-blue-600">Contáctanos</a>
-  </nav>
-    <div>
-      <select class="text-sm border rounded px-2 py-1">
+ <header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+    
+    <!-- LOGO -->
+    <div class="flex items-center space-x-3">
+      <img src="public/logo.png" alt="CanClaim Logo" class="h-10 w-auto">
+      <span class="text-[#1b2d5d] font-extrabold text-xl">CanClaim</span>
+    </div>
+
+    <!-- NAVEGACIÓN -->
+    <nav class="hidden md:flex space-x-8 text-sm font-medium">
+      <a href="#beneficios" class="text-gray-700 hover:text-[#2c4da3] transition">¿Por qué CanClaim?</a>
+      <a href="#compensaciones" class="text-gray-700 hover:text-[#2c4da3] transition">Compensaciones</a>
+      <a href="#contacto" class="text-gray-700 hover:text-[#2c4da3] transition">Contáctanos</a>
+    </nav>
+
+    <!-- SELECT IDIOMA -->
+    <div class="relative">
+      <select class="border border-gray-300 rounded-md px-3 py-1 text-sm text-gray-700 focus:ring-[#2c4da3] focus:border-[#2c4da3]">
         <option>🇪🇸 ES</option>
         <option>🇺🇸 EN</option>
         <option>🇨🇦 FR</option>
       </select>
     </div>
-  </header>
-  <section class="bg-[#f3f4f6] text-center py-16 px-4">
-    <h1 class="text-3xl md:text-4xl font-bold mb-4">¿Te cancelaron o se retrasó tu vuelo?</h1>
-    <p class="text-xl mb-2">Obtén hasta <strong>$1,000 CAD</strong> en compensaciones por pasajero</p>
-    <p class="mb-6 text-gray-700">No importa cuánto pagaste por tu ticket</p>
-    <a href="#" class="bg-[#1b2d5d] text-white font-semibold px-6 py-3 rounded hover:bg-blue-800">Comienza tu reclamación aquí</a>
-    <p class="text-sm text-gray-600 mt-2">Revisa tu compensación en tan solo 2 minutos. El resto lo hacemos nosotros.</p>
-  </section>
+  </div>
+</header>
+<section class="bg-gradient-to-r from-blue-50 to-blue-100 text-center py-20 px-6 shadow-inner">
+  <h1 class="text-4xl md:text-5xl font-extrabold text-[#1b2d5d] mb-6 leading-tight">
+    ¿Te cancelaron o se retrasó tu vuelo?
+  </h1>
+
+  <p class="text-2xl font-semibold text-gray-800 mb-2">
+    Obtén hasta <span class="text-green-600 text-3xl font-extrabold">$1,000 CAD</span> en compensacion por
+pasajero
+  </p>
+
+  <p class="mb-8 text-gray-600 text-lg">
+    No importa cuanto pagaste por tu billete
+  </p>
+
+  <a href="#"
+    class="inline-block bg-[#1b2d5d] text-white text-lg font-bold px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 hover:bg-blue-800 transition duration-300">
+    ✅ Comienza tu reclamación aquí
+  </a>
+
+  <p class="text-sm text-gray-500 mt-10">
+    Consulta tu compensacion en solo 2 minutos.<br> Nosotros nos encargamos del resto.
+  </p>
+</section>
+<section class="bg-white py-16 px-6">
+  <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+
+    <!-- Columna 1: Defensa Pasajeros -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-[#1b2d5d] mb-4">
+        Defendiendo los derechos de pasajeros aéreos en Canadá
+      </h2>
+      <p class="text-gray-700 text-base leading-relaxed">
+        Somos la primera startup 100 % canadiense especializada en compensaciones aereas bajo la normativa APPR. En CanClaim conocemos tus derechos.
+        <br><br>
+        Nuestro equipo te acompaña en todo el proceso asegurandonos que recibas lo que te corresponde, sin complicaciones, de forma clara, legal y sin letra pequeña.
+      </p>
+    </div>
+
+    <!-- Columna 2: Pago solo si ganas -->
+    <div>
+      <h2 class="text-2xl md:text-3xl font-extrabold text-[#1b2d5d] mb-4">
+        Tú no pagas nada por adelantado
+      </h2>
+      <p class="text-gray-700 text-base leading-relaxed">
+        Solo cobramos una comision del 28 % si ganamos tu caso. Por eso trabajamos para conseguirte la mayor compensacion posible.
+        <br><br>
+        Por eso, si ganas, nosotros no cobramos.
+      </p>
+
+      <div class="mt-6 inline-block bg-[#f3f4f6] text-[#1b2d5d] text-sm font-semibold px-4 py-2 rounded shadow">
+        100% Legal.<br>
+        <span class="text-gray-600 font-normal">Conforme a la normativa APPR.</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<section class="bg-[#f9fafb] py-16 px-6">
+  <div class="max-w-7xl mx-auto space-y-16">
+
+    <!-- Defendiendo a los pasajeros -->
+    <div class="text-center">
+      <h2 class="text-3xl md:text-4xl font-extrabold text-[#1b2d5d] mb-4">
+        Defendemos a los pasajeros aéreos en Canadá
+      </h2>
+      <p class="text-gray-700 text-base md:text-lg leading-relaxed max-w-3xl mx-auto">
+        Somos la primera startup canadiense 100% especializada en compensaciones aéreas bajo la normativa APPR.
+        En CanClaim, te ayudamos a reclamar tus derechos de manera clara, legal y sin letras pequeñas.
+      </p>
+    </div>
+
+    <!-- No pagas por adelantado -->
+    <div class="grid md:grid-cols-2 gap-10 items-start">
+      <div>
+        <h3 class="text-2xl font-extrabold text-[#1b2d5d] mb-4">
+          No pagas nada por adelantado
+        </h3>
+      </div>
+      <div>
+        <p class="text-gray-700 text-base leading-relaxed mb-6">
+          Solo cobramos si ganamos tu caso. Nuestra comisión es del 23% sobre la compensación obtenida.
+          Si no ganamos, no pagas. Así de simple.
+        </p>
+        <span class="inline-block bg-[#2c4da3] text-white text-sm font-semibold px-4 py-2 rounded shadow">
+          100% Legal. Basado en la regulación APPR
+        </span>
+      </div>
+    </div>
+
+    <!-- Explora nuestros servicios -->
+    <div class="text-center">
+      <h3 class="text-2xl font-extrabold text-[#1b2d5d] mb-8">
+        Conoce nuestros servicios:
+      </h3>
+
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+
+  <!-- Servicio 1 -->
+  <div class="border border-[#2c4da3] rounded-xl p-6 bg-white hover:shadow-lg transition group">
+    <div class="flex items-center space-x-4 mb-4">
+      <div class="p-3 rounded-full bg-[#e31b23] bg-opacity-10">
+        <!-- Ícono avión en rojo CanClaim -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#e31b23]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 16v-2l-8-5V3.5a.5.5 0 0 0-1 0V9l-8 5v2l8-2.5V20l-2 1v1l3-.5 3 .5v-1l-2-1v-6.5l8 2.5z"/>
+        </svg>
+      </div>
+      <h4 class="text-xl font-semibold text-[#1b2d5d] group-hover:underline">CanCoverage Plus</h4>
+    </div>
+    <p class="text-gray-700 text-base text-left">
+      Cobertura para viajeros frecuentes y múltiples vuelos.
+    </p>
+  </div>
+
+  <!-- Servicio 2 -->
+  <div class="border border-[#2c4da3] rounded-xl p-6 bg-white hover:shadow-lg transition group">
+    <div class="flex items-center space-x-4 mb-4">
+      <div class="p-3 rounded-full bg-[#e31b23] bg-opacity-10">
+        <!-- Ícono avión en rojo CanClaim -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-[#e31b23]" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M21 16v-2l-8-5V3.5a.5.5 0 0 0-1 0V9l-8 5v2l8-2.5V20l-2 1v1l3-.5 3 .5v-1l-2-1v-6.5l8 2.5z"/>
+        </svg>
+      </div>
+      <h4 class="text-xl font-semibold text-[#1b2d5d] group-hover:underline">CanCoverage</h4>
+    </div>
+    <p class="text-gray-700 text-base text-left">
+      Cobertura para un solo vuelo.
+    </p>
+  </div>
+
+</div>
+
+    </div>
+
+  </div>
+</section>
+
+<section class="bg-white py-12 px-4" id="beneficios">
+  <div class="max-w-6xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-8">¿Por qué elegir CanClaim?</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">100% Legal</h3>
+        <p class="text-gray-600">Basados en la normativa canadiense APPR, aseguramos el cumplimiento legal.</p>
+      </div>
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">Sin pagos por adelantado</h3>
+        <p class="text-gray-600">Solo cobramos si tú ganas. Nuestra comisión es del 28% del monto recuperado.</p>
+      </div>
+      <div class="border p-6 rounded-lg shadow">
+        <h3 class="text-lg font-semibold mb-2">Rápido y sin complicaciones</h3>
+        <p class="text-gray-600">Evalúa tu caso en 2 minutos. Nosotros nos encargamos del resto.</p>
+      </div>
+    </div>
+  </div>
+</section>
   <section class="bg-white py-12 px-4" id="contacto">
   <div class="max-w-2xl mx-auto text-center">
     <h2 class="text-2xl font-bold mb-6">Contáctanos</h2>
-    <p class="mb-8 text-gray-600">¿Tienes preguntas o necesitas ayuda con tu reclamación? Escríbenos.</p>
+    <p class="mb-8 text-gray-600">Cuéntanos tu caso y te ayudaremos a gestionar tu reclamación de forma rápida y sencilla..</p>
     <form action="https://formspree.io/f/xdkglkjo" method="POST" class="space-y-6 text-left">
       <div>
         <label class="block text-sm font-medium text-gray-700">Nombre completo</label>
@@ -51,25 +210,6 @@
         <button type="submit" class="bg-[#1b2d5d] text-white px-6 py-3 rounded hover:bg-blue-800">Enviar mensaje</button>
       </div>
     </form>
-  </div>
-</section>
-<section class="bg-white py-12 px-4">
-  <div class="max-w-6xl mx-auto text-center">
-    <h2 class="text-2xl font-bold mb-8">¿Por qué elegir CanClaim?</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="border p-6 rounded-lg shadow">
-        <h3 class="text-lg font-semibold mb-2">100% Legal</h3>
-        <p class="text-gray-600">Basados en la normativa canadiense APPR, aseguramos el cumplimiento legal.</p>
-      </div>
-      <div class="border p-6 rounded-lg shadow">
-        <h3 class="text-lg font-semibold mb-2">Sin pagos por adelantado</h3>
-        <p class="text-gray-600">Solo cobramos si tú ganas. Nuestra comisión es del 28% del monto recuperado.</p>
-      </div>
-      <div class="border p-6 rounded-lg shadow">
-        <h3 class="text-lg font-semibold mb-2">Rápido y sin complicaciones</h3>
-        <p class="text-gray-600">Evalúa tu caso en 2 minutos. Nosotros nos encargamos del resto.</p>
-      </div>
-    </div>
   </div>
 </section>
 <section class="bg-gray-50 py-12 px-4" id="compensaciones">
@@ -110,7 +250,6 @@
     <p class="mt-6 text-sm text-gray-600 italic">* Estos valores aplican solo si la interrupción fue responsabilidad de la aerolínea y no por razones de seguridad.</p>
   </div>
 </section>
-<section class="bg-white py-12 px-4" id="beneficios"></section>
 
 </body>
 <footer class="bg-[#1b2d5d] text-white py-8 px-4 mt-16">
